@@ -37,18 +37,22 @@ const Cart = () => {
                                             updateItemQuantity(product.id, product.quantity - 1)}>-</button>
                                             <button className="btn btn-info ms-2" 
                                             onClick={() => {
-                                                if (product.id === 3 && product.quantity > 1){
-                                                    product.originalPrice = 10
-                                                    console.log(product.originalPrice + " price 2" + product.price);
-                                                    product.price = 10 * 50  / 100
-                                                    // product.price = 0.20 * 25
-                                                }
+                                                // if (product.id === 3 && product.quantity > 1){
+                                                //     product.price = 1
+                                                //     // product.price = 0.20 * 25
+                                                // }
                                                 updateItemQuantity(product.id, product.quantity + 1)
                                                 
                                             }
                                              }>+</button>
                                             <button className="btn btn-danger ms-2" style={{marginRight:"-185px"}}
-                                            onClick={() => removeItem (product.id)}>Remove Product </button>
+                                            onClick={() => {
+                                                // if (product.id === 3 && product.quantity <= 2){
+                                                //     product.price = 10
+                                                //     // product.price = 0.20 * 25
+                                                // }
+                                                removeItem (product.id)}
+                                            }>Remove Product </button>
                                         </td>
 
                                     </tr>
