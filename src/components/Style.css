@@ -1,0 +1,11 @@
+.btn-success:active {
+background-color:darkcyan;
+}
+
+.btn-info:active {
+background-color:seagreen;
+}
+
+.btn-danger:active {
+    background-color:darkred;
+}
